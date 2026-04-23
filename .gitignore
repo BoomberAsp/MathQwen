@@ -1,0 +1,66 @@
+# PyCharm
+.idea/
+main.py
+
+# Model files (keep directory structure)
+models/**/*.bin
+models/**/*.safetensors
+models/**/*.pt
+models/**/*.pth
+models/**/*.ckpt
+models/**/*.h5
+models/**/*.onnx
+models/**/*.gguf
+!models/**/.gitkeep
+
+# Outputs - LoRA weights and training checkpoints (keep directory structure)
+outputs/**/*.safetensors
+outputs/**/*.bin
+outputs/**/*.pt
+outputs/**/*.pth
+!outputs/**/.gitkeep
+
+# Training data files
+*.jsonl
+*.jsonl.tmp
+
+# Archives
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
