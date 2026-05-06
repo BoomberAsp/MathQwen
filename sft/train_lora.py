@@ -157,7 +157,7 @@ class TrainingArgs(TrainingArguments):
         metadata={"help": "Number of dataloader workers"}
     )
     report_to: str = field(
-        default="none",
+        default="tensorboard",
         metadata={"help": "Report to (wandb, tensorboard, none)"}
     )
 
