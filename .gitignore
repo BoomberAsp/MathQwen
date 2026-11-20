@@ -1,23 +1,64 @@
+# PyCharm
+.idea/
+main.py
+
 # 模型权重（超过 GitHub 100MB 限制，建议存放于 Hugging Face Hub）
 *.safetensors
 *.ckpt
 *.pt
 *.pth
+models/**/*.bin
+models/**/*.h5
+models/**/*.onnx
+models/**/*.gguf
+outputs/**/*.bin
+!models/**/.gitkeep
+!outputs/**/.gitkeep
 
 # 训练检查点目录
 upload_models/cpts/
 
-# 大数据集（约 467MB，超过 GitHub 100MB 限制）
-nv-community_Nemotron-CC-Math-v1_4plus_first100000.jsonl
-data/nv-community_Nemotron-CC-Math-v1_4plus_first100000.jsonl
+# 训练数据文件（含约 467MB 的 Nemotron 大数据集，超过 GitHub 100MB 限制）
+*.jsonl
+*.jsonl.tmp
+
+# Archives
+*.zip
 
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
 *.egg-info/
+.installed.cfg
+*.egg
 .ipynb_checkpoints/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
 
 # 训练日志与输出
 runs/
 wandb/
 *.log
+
+# OS files
+.DS_Store
+Thumbs.db
