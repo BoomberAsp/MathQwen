@@ -1,0 +1,8 @@
+
+# conda environments:
+#
+# * -> active
+# + -> frozen
+base                 *   /home/ubuntu/miniconda3
+llm                      /home/ubuntu/miniconda3/envs/llm
+

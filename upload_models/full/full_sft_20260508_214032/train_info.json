@@ -1,0 +1,10 @@
+{
+  "model_path": "models/Qwen3-0.6B-Base",
+  "data_path": "data/train_sft.jsonl",
+  "epochs": 4,
+  "learning_rate": 5e-06,
+  "precision": "FP32",
+  "train_samples": 723,
+  "eval_samples": 81,
+  "timestamp": "2026-05-08T21:46:20.492262"
+}
